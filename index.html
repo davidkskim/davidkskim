@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+    <title>davidkskim</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">David Kim</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Portfolio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactme" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="container home home__height" id="home">
+            <h2 class="home__name__title">David Kim</h2>
+            <h2 class="home__title" style="color:rgb(61, 201, 154)">Front-End Developer <span style="color:black">&
+                    <span><span style="color:rgb(255, 98, 83)">Product Designer<span>
+            </h2>
+
+            <button class="btn" onclick=" window.open('assets/David_Kim_Resume.pdf')"> View Resume</button>
+        </section>
+
+        <section class="scroll">
+            <div class="scroll_text">
+                <p>Scroll Down</p>
+            </div>
+            <div>
+                <i class='bx bx-mouse scroll_icon'></i>
+            </div>
+        </section>
+        <!--=============== ABOUT ===============-->
+        <section class="container section section__height" id="about">
+            <p class="section__title">_____</p>
+            <h2 class="section__title">About</h2>
+            <section class="about__content">
+                <img src="assets/profilePic.jpg" class="profile__pic">
+                <section class="about__text">
+                    <h2>My journey so far.</h2>
+                    <p></p>
+                </section>
+            </section>
+        </section>
+
+
+        <!--=============== SKILLS ===============-->
+        <section class="container section section__height" id="skills">
+            <p class="section__title">_____</p>
+            <h2 class="section__title">Skills</h2>
+        </section>
+
+        <!--=============== PORTFOLIO ===============-->
+        <section class="container section section__height" id="portfolio">
+            <p class="section__title">_____</p>
+            <h2 class="section__title">Portfolio</h2>
+        </section>
+
+        <!--=============== CONTACTME ===============-->
+        <section class="container section section__height" id="contactme">
+            <p class="section__title">_____</p>
+            <h2 class="section__title">Contact</h2>
+        </section>
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+
+</html>
