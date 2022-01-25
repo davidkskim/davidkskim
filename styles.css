@@ -24,6 +24,7 @@
   --home-name-font-size: 3rem;
   --profile-pic-size-w: 19rem;
   --profile-pic-size-h: 21rem;
+  --content-width:100%;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -37,6 +38,7 @@
     --home-name-font-size: 4.75rem;
     --profile-pic-size-w: 27rem;
     --profile-pic-size-h: 29rem;
+    --content-width: 30%;
   }
 }
 
@@ -80,19 +82,19 @@ a {
   text-align: left;
   margin-bottom: 1.5rem;
 }
-
+/* 
 .section__height {
   height: 100vh;
-}
+} */
 
 .btn{
   width: 115px;
   height: 40px;
   border: none;
   color: white;
-  background-color: rgb(61, 201, 154);
+  background-color: var(--first-color);
   border-radius: 4px;
-  box-shadow: inset 0 0 0 0 rgb(97, 214, 173);
+  box-shadow: inset 0 0 0 0 var(--first-color);
   transition: ease-out 0.5s;
   font-size: 1rem;
   outline: none;
@@ -311,21 +313,49 @@ a {
 
 .scroll_icon{
   font-size: 2.5rem;
+  
 }
 
 /*=============== ABOUT ===============*/
 .about__content{
   display: flex;
-  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.flexbox__item{
+  margin: 10px;
 }
 
 .profile__pic{
   width: var(--profile-pic-size-w);
   height: var(--profile-pic-size-h);
   border-radius: 6px;
-  float: left;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about__text{
-  
+/*=============== SKILLS ===============*/
+.skill__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+.skill__item{
+  margin: 10px;
+  padding: 10px;
+  width: var(--content-width);
+  border-radius: 6px; 
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.skill__text{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0 10px 0;
+} 
