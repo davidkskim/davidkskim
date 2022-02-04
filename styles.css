@@ -12,7 +12,7 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 8%, 35%);
-  --body-color: hsl(var(--hue), 100%, 99%);
+  --body-color: rgb(250,255,254);
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
@@ -44,7 +44,7 @@
     --content-width: 30%;
     --about-text: 60%;
     --project-width: 49%;
-    --project-text: 48%;
+    --project-text: 45%;
   }
 }
 
@@ -328,20 +328,19 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   /* align-items: center; */
-
+  border-radius: 6px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
 }
 
 .profile__pic{
   width: var(--profile-pic-size-w);
   height: var(--profile-pic-size-h);
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 20px;
-  float: left;
 }
 
 .about__text{
-  margin: 0px 10px 0px 10px;
+  margin: 10px;
   width: var(--about-text);
 }
 
@@ -356,8 +355,9 @@ a {
   margin: 10px;
   /* padding: 10px; */
   width: var(--content-width);
-  border-radius: 6px; 
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
 }
 
 .skill__text{
@@ -375,18 +375,25 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   /* align-items: center; */
-
+  border-radius: 6px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
 }
 
 .project__pic{
   width: var(--project-width);
   border-radius: 6px;
   /* box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  margin-bottom: 20px;
   float: left;
 }
 
 .project__text{
-  margin: 0px 10px 0px 10px;
   width: var(--project-text);
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.project__header{
+  margin-top: 40px;
+  margin-bottom: 9px;
 }
