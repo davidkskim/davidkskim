@@ -346,6 +346,16 @@ a {
   width: var(--about-text);
 }
 
+.currently__header{
+  margin-top: 40px;
+  margin-bottom: 9px;
+}
+
+.currently__pic{
+  width: var(--profile-pic-size-w);
+  height: var(--profile-pic-size-h);
+  border-radius: 6%
+}
 /*=============== SKILLS ===============*/
 .skill__content{
   display: flex;
