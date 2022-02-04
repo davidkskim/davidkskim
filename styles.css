@@ -338,7 +338,7 @@ a {
 .profile__pic{
   width: var(--profile-pic-size-w);
   height: var(--profile-pic-size-h);
-  border-radius: 25% 6%;
+  border-radius: 25% 3%;
 }
 
 .about__text{
@@ -410,9 +410,9 @@ a {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  color: var(--title-color);
   font-weight: 600;
 }
+
 .link__icon {
   font-size: 1.5rem;
   color: var(--text-color);
@@ -421,4 +421,20 @@ a {
 .link__icon__name{
     font-size: var(--tiny-font-size);
     color: var(--text-color);
+}
+
+.bxl-figma:hover{
+  color:rgb(255, 98, 83)
+}
+
+.bxl-github:hover{
+  color: var(--first-color)
+}
+
+.bxs-window-alt:hover{
+  color: black
+}
+
+.bx-slideshow:hover{
+  color: gold
 }
