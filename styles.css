@@ -24,6 +24,7 @@
   --home-name-font-size: 3rem;
   --profile-pic-size-w: 15rem;
   --profile-pic-size-h: 17rem;
+  --profile-pic-spacing: space-around;
   --content-width:100%;
   --about-text: 100%;
   --project-width: 100%;
@@ -41,6 +42,7 @@
     --home-name-font-size: 4.75rem;
     --profile-pic-size-w: 20rem;
     --profile-pic-size-h: 22rem;
+    --profile-pic-spacing: space-between;
     --content-width: 30%;
     --about-text: 60%;
     --project-width: 49%;
@@ -326,7 +328,7 @@ a {
 .about__content{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: var(--profile-pic-spacing);
   /* align-items: center; */
   border-radius: 6px;
   box-shadow: -6px -6px 20px rgba(255,255,255,1),
@@ -336,7 +338,7 @@ a {
 .profile__pic{
   width: var(--profile-pic-size-w);
   height: var(--profile-pic-size-h);
-  border-radius: 6px;
+  border-radius: 25% 6%;
 }
 
 .about__text{
@@ -383,17 +385,40 @@ a {
 .project__pic{
   width: var(--project-width);
   border-radius: 6px;
-  /* box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   float: left;
 }
 
 .project__text{
   width: var(--project-text);
-  margin-bottom: 50px;
   padding: 10px;
+  position:relative;
 }
 
 .project__header{
   margin-top: 40px;
   margin-bottom: 9px;
+}
+
+.project_links{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.project__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  color: var(--title-color);
+  font-weight: 600;
+}
+.link__icon {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.link__icon__name{
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
 }
