@@ -22,9 +22,12 @@
   --tiny-font-size: .625rem;
   --home-font-size: 1.5rem;
   --home-name-font-size: 3rem;
-  --profile-pic-size-w: 19rem;
-  --profile-pic-size-h: 21rem;
+  --profile-pic-size-w: 15rem;
+  --profile-pic-size-h: 17rem;
   --content-width:100%;
+  --about-text: 100%;
+  --project-width: 100%;
+  --project-text: 100%
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -36,9 +39,12 @@
     --normal-font-size: 1rem;
     --home-font-size: 2rem;
     --home-name-font-size: 4.75rem;
-    --profile-pic-size-w: 27rem;
-    --profile-pic-size-h: 29rem;
+    --profile-pic-size-w: 20rem;
+    --profile-pic-size-h: 22rem;
     --content-width: 30%;
+    --about-text: 60%;
+    --project-width: 49%;
+    --project-text: 48%;
   }
 }
 
@@ -321,12 +327,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
 
-}
-
-.flexbox__item{
-  margin: 10px;
 }
 
 .profile__pic{
@@ -334,6 +336,13 @@ a {
   height: var(--profile-pic-size-h);
   border-radius: 6px;
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  float: left;
+}
+
+.about__text{
+  margin: 0px 10px 0px 10px;
+  width: var(--about-text);
 }
 
 /*=============== SKILLS ===============*/
@@ -345,7 +354,7 @@ a {
 
 .skill__item{
   margin: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   width: var(--content-width);
   border-radius: 6px; 
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -359,3 +368,25 @@ a {
   align-content: center;
   margin: 10px 0 10px 0;
 } 
+
+/*=============== SKILLS ===============*/
+.project__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+
+}
+
+.project__pic{
+  width: var(--project-width);
+  border-radius: 6px;
+  /* box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  margin-bottom: 20px;
+  float: left;
+}
+
+.project__text{
+  margin: 0px 10px 0px 10px;
+  width: var(--project-text);
+}
