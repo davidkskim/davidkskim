@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=PT+Sans&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -16,7 +16,7 @@
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
+  --body-font: 'Exo', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
@@ -29,6 +29,7 @@
   --about-text: 100%;
   --project-width: 100%;
   --project-text: 100%
+  --project-text-margin: 20px;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -47,6 +48,7 @@
     --about-text: 60%;
     --project-width: 49%;
     --project-text: 45%;
+    --project-text-margin: 10px 26px;
   }
 }
 
@@ -359,20 +361,11 @@ a {
 }
 
 .about__text{
-  margin: 10px;
+  margin: 10px 33px;
   width: var(--about-text);
 }
 
-.currently__header{
-  margin-top: 40px;
-  margin-bottom: 9px;
-}
 
-.currently__pic{
-  width: var(--profile-pic-size-w);
-  height: var(--profile-pic-size-h);
-  border-radius: 6%
-}
 /*=============== SKILLS ===============*/
 .skill__content{
   display: flex;
@@ -417,8 +410,9 @@ a {
 
 .project__text{
   width: var(--project-text);
-  padding: 10px;
+  margin: var(--project-text-margin);
   position:relative;
+  padding: 10px;
 }
 
 .project__header{
@@ -465,3 +459,38 @@ a {
 .bx-slideshow:hover{
   color: gold
 }
+
+.currently__header{
+  margin-top: 40px;
+  margin-bottom: 9px;
+}
+
+.currently__pic{
+  width: var(--profile-pic-size-w);
+  height: var(--profile-pic-size-h);
+  border-radius: 6%
+}
+
+.currently__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+.currently__item{
+  margin: 10px;
+  /* padding: 10px; */
+  width: var(--content-width);
+  border-radius: 6px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
+}
+
+.currently__text{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0 10px 0;
+} 
